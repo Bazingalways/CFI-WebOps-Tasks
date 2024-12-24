@@ -1,0 +1,232 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Set a default font for the body */
+}
+
+div{
+    display: flex;
+    box-sizing: content-box;
+    width:100%;
+}
+
+body header{    
+    display: flex;
+    position:sticky;
+    top: 0;
+    background-color: rgb(205, 195, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    z-index:1;
+    border-bottom: 3px solid black;
+
+}
+header h1{
+    font-size: 2em;
+}
+
+body h3{
+    font-size: 1.5em;
+    text-shadow: gray 1px 0 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-wrap: nowrap;
+}
+
+body header ul{
+    list-style-type:none;
+    padding: 5px 5px;
+    font-size: 1.2em;
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+body header section{
+    position: absolute;
+    left: 50%;
+}
+
+body header input{
+    width:80%;
+    max-width: 500px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid rgb(190, 253, 255);;
+    border-radius: 5px;
+    outline: none;
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    position:sticky;
+    left:0%;
+    background-color:rgb(205, 195, 255);
+    box-sizing: border-box;
+    border-right: 3px solid black;
+    z-index: 0;
+}
+
+nav a {
+    color: rgb(69, 69, 71);
+    text-decoration:none;
+    border-bottom: 2px dashed lightslategrey;
+    text-align: left;
+    text-wrap: nowrap;
+    display: block;
+
+}
+nav a.botm{
+
+    border-bottom: none;
+
+}
+
+nav a:hover {
+font-weight: bold;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:5px 25px;
+    line-height: 2.5em; 
+}
+main{
+    background-color: rgb(190, 253, 255);
+    flex-grow:1;
+}
+body main h2{
+    text-align:center;
+    border-bottom: 2px rgb(205, 195, 255) groove;
+    padding: 10px;
+}
+main .content{
+    margin: 0 5%;
+    max-width: 960px;
+}
+main h2 span{
+    font-size:1.2em;
+}
+
+
+div .botm {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div .botm img{
+    position:relative;
+    left:25%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    max-width: 160px;
+    height: auto; 
+    border-radius: 5px;
+    border:2px ridge darkgray;
+    transition: transform 0.5s ease-in-out;
+    margin: 5% 25%;
+  }
+  body > div > main > div.botm > section > img:hover {
+    transform: scale(1.2,1.2);
+}
+div .botm section{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;   
+}
+
+.botm .botmtext {
+    position:relative;
+    display: block;
+    left:10%;
+    text-wrap: nowrap;
+}
+.botm a{
+    display: inline-block;
+    text-decoration: none;
+    border:2px dotted white;
+    padding: 10px;
+    border-radius: 10px;
+    color:rgb(69, 69, 71);
+}
+
+.botm a:hover{
+    font-weight: bold;
+}
+
+.carousel {
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    padding-block-start: 3%;
+    transition: transform 0.5s ease-in-out;
+    margin: 5% 25%;
+  }
+  
+  .carousel .image :hover {
+    transform: scale(1.2,1.2);
+
+  }
+  
+  .carousel li {
+    display: inline-block;
+    margin: -45px;
+  }
+  
+  .carousel img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;    
+    border:2px ridge darkgray;
+  }
+
+.genre-carousel{
+    display: block;
+    padding-bottom: 30px;
+}
+
+.authors-carousel{
+    display:block;
+    margin-bottom: 10%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(205, 195, 255);
+    border-top: 3px solid black ;
+    
+}
+footer section{
+    text-align: center;
+}
+
+footer ul{
+    list-style:none ;
+    padding: 0px;
+    text-decoration:none;
+    color: rgb(69, 69, 71);
+    align-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(69, 69, 71);
+}
+
+footer .connect a{
+    padding-right: 20%;
+    text-decoration: none;
+    color: rgb(69, 69, 71);
+    align-content: center;
+}
+
+button {
+    width:5%;
+    max-width: 500px;
+    height: 43px;
+    padding: 5px;
+    border: 2px solid rgb(190, 253, 255);;
+    border-radius: 5px;
+    outline: none;
+}
